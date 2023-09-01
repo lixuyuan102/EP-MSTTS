@@ -28,9 +28,6 @@
     <link rel="stylesheet" href="/EP-MSTTS/assets/css/style.css?v=c75b73c2fff55285034bb3781faf6d6e3d697870">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-main-content{
-    width:"70%";
-}
     
   </head>
   <body>
@@ -54,7 +51,7 @@ main-content{
 <center> 2 HCCL IOA </center>
 
 <h2 id="abstract">Abstract</h2>
-<p>Neural end-to-end Text-to-Speech(TTS) systems have been able to generate high-quality single-sentence speech with highly expressive. However, reconstructing highly expressive, long-duration speech for paragraph-level text remains a challenge. The paragraph speech synthesized by the existing model cannot express the style of each sentence well. In addition, training models directly on these overly long speeches can affect the quality of the generated speech. In this paper, we propose a highly expressive paragraph speech synthesis system with multi-step variational autoencoder(EP-MSTTS). This system decouples speech information at different grammatical levels into latent variables and predicts them separately to synthesize high-quality paragraph speech. We also propose a three-step training method to help the whole decoupling process. The proposed TTS model was trained on a 30-hour dataset of French novel recordings. Experimental result shows that our model can produce higher sound quality and more expressive paragraph speech compared to VITS and conditional VITS with the BERT embedding of paragraph text. 
+<p>Neural networks have been able to generate high-quality single-sentence speech with substantial expressiveness. However, it remains a challenge concerning paragraph-level speech synthesis due to the need for coherent acoustic features while delivering fluctuating speech styles. Meanwhile, training these models directly on over-length speech leads to a deterioration in the quality of synthesis speech. To address these problems, we propose a high-quality and expressive paragraph speech synthesis system with a multi-step variational autoencoder. Specifically, we employ multi-step latent variables to capture speech information at different grammatical levels before utilizing these features in parallel to generate speech waveform. We also propose a three-step training method to improve the decoupling ability. Our model was trained on a single-speaker French audiobook corpus released at Blizzard Challenge 2023. Experimental results underscore the significant superiority of our system over baseline models. </p>
 <h2 id="introduction">Introduction</h2>
 <p>This is a <a href="http://dongchaoyang.top/EP-MSTTS//">demo</a> for our paper <strong><em>EP-MSTTS: Expressive paragraph text-to-speech synthesis with multi-step variational self-encoders</em></strong>. In the following, we will show some generated samples by our proposed method. </p>
 
